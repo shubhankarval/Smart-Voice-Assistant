@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}" async></script>
+
+    <script src="https://kit.fontawesome.com/69a55823e5.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo"></a>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#QuickTalker">QUICKTALKER</a></li>
+                <li><a href="#">CHATBOT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="QuickTalker">
+        <h1>QuickTalker</h1>
+        <div class="chatgpt">
+            <form method="post" action="{{ url_for('prompt') }}" id="textInput">
+                <input type="text" name="prompt" id="prompt" placeholder="Enter ChatGPT Request"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter ChatGPT Request'">
+                <button type="submit"><span>Submit </span></button>
+            </form>
+            <div class="voice-recorder">
+                <button id="record-button"><i class="fa-solid fa-circle fa-sm"></i>Record</button>
+                <button id="stop-button"><i class="fa-solid fa-square fa-sm"></i>Stop</button>
+                <button id="clear-button"><i class="fa-solid fa-trash fa-sm"></i>Clear</button>
+            </div>
+        </div>
+
+        <div class="output-box">
+            <textarea id="promptOutput" placeholder="Response" readonly></textarea>
+            <button id="tts1"><i class="fa-solid fa-volume-high fa-xl"></i></button>
+        </div>
+
+        <div class="output-box">
+            <textarea id="promptOutput2" placeholder="Alt Response" readonly></textarea>
+            <button id="tts2"><i class="fa-solid fa-volume-high fa-xl"></i></button>
+        </div>
+
+    </section>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</body>
+
+</html>
