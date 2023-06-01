@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.debug = True
 app.config["TEMPLATES_AUTO_RELOAD"]  = True
 
-# venv: .\env\Scripts\activate
+# venv: env\Scripts\activate
 # To run: flask --app server run
 # to close venv: deactivate
 
