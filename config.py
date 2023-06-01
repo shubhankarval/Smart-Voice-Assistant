@@ -1,2 +1,0 @@
-# OPENAI_API_KEY = "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"
-OPENAI_API_KEY = "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"
